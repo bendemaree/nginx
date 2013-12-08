@@ -45,7 +45,9 @@ end
 if platform_family?('rhel')
   package 'lua-devel' do
     action :install
+  end
 elsif platform_family?('debian')
   package 'liblua5.1-dev' do
     action :install
+  end
 end
